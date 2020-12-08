@@ -1,0 +1,214 @@
+body {
+	background-color: #282c34;
+}
+
+.App {
+	text-align: center;
+	max-width: 728px;
+	margin: 0 auto;
+}
+
+.App header {
+	background-color: transparent;
+	height: 10vh;
+	min-height: 50px;
+	color: white;
+	position: fixed;
+	width: 100%;
+	max-width: 728px;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 99;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.App section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	background: url(./crop.jpeg);
+	background-position: center;
+}
+
+main {
+	padding: 10px;
+	height: 80vh;
+	margin: 10vh 0 10vh;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+	background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+	background: url(./crop.jpeg);
+}
+
+form {
+	height: 46px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 728px;
+	display: flex;
+	font-size: 1.5rem;
+	background-color: darkgray;
+	margin: 2px 2px 2px 2px;
+	border-radius: 20px;
+	z-index: 10;
+}
+
+.sendbtn {
+	background-color: transparent;
+	border-style: none;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+.send {
+	cursor: pointer;
+	margin-top: 3px;
+	height: 30px;
+	padding-right: 0px;
+}
+.thumb {
+	cursor: pointer;
+	margin: 3px 0px 5px 0px;
+	height: 35px;
+	padding: 0px 5px 0px 0px;
+}
+.input {
+	background-color: rgb(26, 23, 23);
+	width: 90%;
+	margin: 5px 0px 5px 5px;
+	border-radius: 20px;
+	border: 2px lightgray solid;
+}
+input {
+	margin: 2px 3px 2px 3px;
+	line-height: 1.3;
+	width: 100%;
+	font-size: 1.4rem;
+	background: transparent;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.signin {
+	width: 250px;
+	margin: 0 auto;
+	display: flex;
+	background-color: #4285f4;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+ul,
+li {
+	text-align: left;
+	list-style: none;
+}
+
+p {
+	max-width: 500px;
+	margin-bottom: 1px;
+	line-height: 20px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	position: relative;
+	color: white;
+	text-align: center;
+	margin-right: -20px;
+}
+
+.message {
+	display: flex;
+	align-items: center;
+	height: 45px;
+}
+
+.sent {
+	flex-direction: row-reverse;
+}
+
+.sent p {
+	color: white;
+	background: #0b93f6;
+	align-self: flex-end;
+}
+.received p {
+	background: #e5e5ea;
+	color: black;
+	margin-left: -25px;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 2px 5px;
+	position: relative;
+	top: -10px;
+	/* left: -10px; */
+	z-index: 1;
+}
+
+.SignOut {
+	background-color: transparent;
+	font-size: 15px;
+	width: 100px;
+	border: 2px lightgrey solid;
+	padding: 5px;
+	margin-right: 10px;
+	color: lightgray;
+	font-weight: bold;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.SignOut:hover {
+	background-color: lightgray;
+	color: black;
+}
+.h1 {
+	color: gray;
+	text-decoration: none;
+}
+
+.google {
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	margin: 15px 0px 5px 8px;
+}
+.ds {
+	color: #4285f4;
+}
+.head {
+	color: lightgray;
+	font-size: 70px;
+	height: 200px;
+	width: 400px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: auto;
+}
